@@ -1,0 +1,35 @@
+@import './utils/reset.scss';
+@import './utils/fonts.scss';
+@import './utils/vars.scss';
+
+html {
+    overflow-x: hidden;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.64);
+}
+.nav-opened .mask {
+    opacity: 1;
+    pointer-events: all;
+}
+@media (max-width: $tableWidth) {
+    .mask {
+        display: none;
+    }
+    body.nav-opened {
+        height: min-content;
+        section, footer {
+            display: none;
+        }
+    }
+}
+@import "./modules/header";
+@import "./modules/footer";

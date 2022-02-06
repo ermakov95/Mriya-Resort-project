@@ -1,0 +1,84 @@
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    height: calc(808vw / 14.4);
+    position: relative;
+    top: calc(40vw / 14.4);
+    svg, img, picture {
+        width: 100%;
+        height: 100%;
+    }
+}
+.footer-tablet {
+    z-index: 1;
+    width: calc(616vw / 14.4);
+    height: calc(822vw / 14.4);
+    position: absolute;
+    top: calc(-140vw / 14.4);
+    left: calc(405vw / 14.4);
+}
+.footer-text {
+    width: calc(1531vw / 14.4);
+    height: calc(253vw / 14.4);
+    position: absolute;
+    top: calc(150vw / 14.4);
+    left: calc(-35vw / 14.4);
+}
+.footer-icon {
+    position: absolute;
+    bottom: calc(103vw / 14.4);
+    left: calc(687vw / 14.4);
+    width: calc(66vw / 14.4);
+    height: calc(56vw / 14.4);
+}
+.footer-bg {
+    display: none;
+}
+@media (min-width: $desktopWidth) {
+    .footer {
+        height: 808px;
+        top: 40px;
+    }
+    .footer-tablet {
+        width: 616px;
+        height: 822px;
+        top: -140px;
+        left: 405px;
+    }
+    .footer-text {
+        width: 1531px;
+        height: 253px;
+        top: 150px;
+        left: -35px;
+    }
+    .footer-icon {
+        bottom: 103px;
+        left: 687px;
+        width: 66px;
+        height: 56px;
+    }
+}
+@media (max-width: $tableWidth) {
+    .footer {
+        height: calc(415vw / 3.6);
+        top: calc(180vw / 3.6);
+    }
+    .footer-tablet, .footer-text {
+        display: none;
+    }
+    .footer-icon {
+        bottom: calc(215vw / 3.6);
+        left: calc(150vw / 3.6);
+        width: calc(66vw / 3.6);
+        height: calc(56vw / 3.6);
+    }
+    .footer-bg {
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: calc(555vw / 3.6);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
