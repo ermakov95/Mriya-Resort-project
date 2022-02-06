@@ -1,3 +1,3 @@
-# Sedona-project
-## My first project - Sedona
-## Мой первый проект - Седона
+# Mriya-Resort-project
+## My sixth project - Mriya-Resort
+## Мой шестой проект - Мрия
