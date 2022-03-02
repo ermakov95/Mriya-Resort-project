@@ -1,11 +1,11 @@
 {
   "name": "Mriya-Resort-project",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "My sixth project - Mriya-Resort",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ermakov95/Mriya-Resort-project"
+    "url": "https://github.com/ermakov95/MriyaResort-VanillaJS"
   },
   "author": {
     "name": "Ivan Ermakov",

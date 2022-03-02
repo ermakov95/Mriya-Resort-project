@@ -2,6 +2,22 @@
     width: 100%;
     z-index: 3;
 }
+.link {
+    position: absolute;
+    z-index: 5;
+    opacity: .5;
+    padding: calc(5vw / 14.4);
+    font-family: $mainSemiFont;
+    font-size: calc(20vw / 14.4);
+    color: #FFF;
+    line-height: 100%;
+    &:hover {
+        opacity: .75
+    }
+    &:active {
+        opacity: 1
+    }
+}
 .nav {
     position: relative;
     z-index: 3;
@@ -406,6 +422,10 @@
     .header {
         width: 1440px;
     }
+    .link {
+        padding: 5px;
+        font-size: 20px;
+    }
     .nav-top {
         height: 80px;
     }
@@ -571,6 +591,10 @@
 @media (max-width: $tableWidth) {
     .header {
         width: calc(360vw / 3.6);
+    }
+    .link {
+        padding: calc(5vw / 3.6);
+        font-size: calc(20vw / 3.6);
     }
     .nav {
         width: calc(360vw / 3.6);
